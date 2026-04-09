@@ -1,0 +1,36 @@
+{
+  "name": "obsidian-openclaude-plugin",
+  "version": "1.0.0",
+  "description": "Open Claude integration for Obsidian",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "node esbuild.config.js",
+    "lint": "eslint src --ext .ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "claude",
+    "ai",
+    "assistant"
+  ],
+  "author": "Modified from obsidian-claude-code-plugin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "builtin-modules": "^3.2.0",
+    "esbuild": "^0.14.38",
+    "eslint": "^8.9.0",
+    "jest": "^27.4.5",
+    "obsidian": "^1.4.11",
+    "tslib": "^2.3.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@openai/api": "^4.8.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "obsidian-openclaude-plugin",
+  "name": "Open Claude Plugin for Obsidian",
+  "version": "1.0.0",
+  "description": "Integrate Open Claude with Obsidian for AI-powered note editing and assistance",
+  "author": "Modified from obsidian-claude-code-plugin",
+  "authorUrl": "",
+  "minAppVersion": "0.15.0",
+  "minVersion": "1.4.0",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,185 @@
+/* Open Claude Plugin for Obsidian */
+
+.workspace-leaf-content .view-header {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.openclaude-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.openclaude-chat-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.openclaude-input-container {
+  padding: 10px;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.openclaude-input {
+  width: 100%;
+  min-height: 100px;
+  padding: 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  resize: vertical;
+}
+
+.openclaude-input:focus {
+  outline: none;
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px var(--interactive-accent);
+}
+
+.openclaude-send-button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.openclaude-send-button:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+.openclaude-send-button:disabled {
+  background-color: var(--background-modifier-border);
+  cursor: not-allowed;
+}
+
+.openclaude-message {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.openclaude-message.user {
+  background-color: var(--background-modifier-info);
+  margin-left: 20px;
+}
+
+.openclaude-message.assistant {
+  background-color: var(--background-modifier-box-shadow);
+  margin-right: 20px;
+}
+
+.openclaude-message pre {
+  background-color: var(--background-primary);
+  padding: 8px;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin-top: 8px;
+}
+
+.openclaude-loading {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 20px;
+}
+
+.openclaude-error {
+  color: var(--text-error);
+  background-color: var(--background-modifier-error);
+  border: 1px solid var(--text-error);
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+.openclaude-settings {
+  padding: 16px;
+}
+
+.openclaude-settings h2 {
+  margin-bottom: 16px;
+}
+
+.openclaude-settings .setting-item {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.openclaude-settings .setting-item:last-child {
+  border-bottom: none;
+}
+
+.openclaude-settings .setting-item-name {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.openclaude-settings .setting-item-description {
+  font-size: 0.9em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.openclaude-settings input[type="text"],
+.openclaude-settings input[type="password"],
+.openclaude-settings textarea {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+}
+
+.openclaude-settings .setting-item-control {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.openclaude-settings .setting-item-control button {
+  padding: 6px 12px;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.openclaude-settings .modal {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.openclaude-settings .modal-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.openclaude-settings .modal-footer {
+  padding: 16px;
+  border-top: 1px solid var(--background-modifier-border);
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.openclaude-settings .modal-footer button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.openclaude-settings .modal-footer button.primary {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
