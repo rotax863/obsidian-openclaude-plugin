@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"C:\\\\Users\\\\Leeson\\\\obsidian-openclaude-plugin\\\" && git push origin master 2>&1\",\"description\":\"Push and capture all output including stderr\"}",
+  "error": "Exit code 128",
+  "timestamp": "2026-04-09T03:28:46.274Z",
+  "retry_count": 3
+}

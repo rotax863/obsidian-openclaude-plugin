@@ -2,12 +2,13 @@
   "name": "obsidian-openclaude-plugin",
   "version": "1.0.0",
   "description": "Open Claude integration for Obsidian",
-  "main": "main.js",
+  "main": "openclaude-permission-handler.js",
   "scripts": {
     "build": "tsc",
     "dev": "node esbuild.config.js",
     "lint": "eslint src --ext .ts",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "node esbuild.config.js"
   },
   "keywords": [
     "obsidian",
